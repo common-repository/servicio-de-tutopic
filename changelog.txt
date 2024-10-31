@@ -1,0 +1,11 @@
+=== Tutopic para WordPress ===
+
+== Entradas del ChangeLog Archivadas ==
+
+Este archivo contiene entradas de registro de cambios más antiguas, para que podamos mantener un tamaño razonable del archivo readme.txt estándar de WordPress.
+Para ver los últimos cambios, consulte la sección "Changelog" del [readme.txt file](https://plugins.svn.wordpress.org/akismet/trunk/readme.txt).
+
+= 1.00 =
+*Fecha de lanzamiento - Diciembre, 2020*
+
+* Primera version de desarrollo

@@ -1,0 +1,12 @@
+{
+    "name": "tutopic/tutopic-service",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TuTopicPlugin\\": "TuTopicPlugin/"
+        }
+    }
+}

@@ -1,0 +1,249 @@
+/**
+* @copyright   (C) 2020 - 2021 Tutopic
+* @license     GNU General Public License v2 or later
+* @license     http://www.gnu.org/licenses/gpl-2.0.html
+* @author      Tutopic
+*
+* This file is part of "Tutopic para WordPress".
+* "Tutopic para WordPress" is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License or (at your option) any later version.
+* "Tutopic para WordPress" is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*/
+
+/* CSS del layout de tabs --------> */
+.main-layout {
+  font-family: Helvetica, Roboto, Arial,sans-serif;
+}
+
+.ff-tutopic {
+  font-family: Helvetica, Roboto, Arial,sans-serif;
+}
+
+
+.main-layout{
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgTutopicLogo{
+    width: 100%;
+    max-width: 350px;
+    object-fit: contain;
+    padding: 0px 20px;
+}
+.btnIrTutopic{
+  position: absolute;
+  margin-left: 235px;
+  padding: 10px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.tabset > input[type="radio"] {
+  display: none;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+.tabset > label {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: #fff;
+  color: var(--dark);
+  transition: .1s all ease !important;
+  margin: 0px 2px;
+}
+
+.tabset > label:hover,
+.tabset > input:checked + label,
+.tabset > input:focus + label {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  color: #fff;
+}
+
+.tab-panel {
+  border-top: 1px solid #f1f1f1;
+  background: #fff;
+  border-radius: 15px;
+  padding: 0px 10px 5px;
+  min-height: 55vh;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@media (max-width: 782px){
+  .tab-panel {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.tabset {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px auto 0px;
+  padding-right: 20px;
+}
+
+@media (max-width: 1200px){
+  .btnIrTutopic{
+    margin-left: 2px;
+  }
+}
+@media (max-width: 782px){
+  .tabset {
+    padding-right: 10px;
+  }
+}
+@media(max-width:767px){
+  .tabset > label {
+    font-size: 23px;
+  }
+  .btnIrTutopic{
+    font-size: 23px;
+  }
+}
+
+.page-title {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+/*.page-title {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}*/
+
+.text-content {
+  font-sizE: 1.1rem;
+}
+
+.text-normal {
+  font-sizE: 0.95rem;
+}
+
+.link-tutopic {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.link-tutopic:hover {
+  text-decoration: none;
+  color: var(--primary-transparent);
+}
+
+.tutopic-checkbox-field {
+  /**/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tutopic-checkbox-item {
+  /**/
+  margin: 12px;
+}
+
+.tutopic-checkbox-label {
+  padding: 10px;
+  background: #fff;
+  color: var(--primary);
+  border-color: var(--primary);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+.tutopic-checkbox-check:checked + label.tutopic-checkbox-label{
+  background: var(--primary);
+  color: #fff;
+}
+
+label.tutopic-checkbox-label:hover {
+  /*Separado del css de arriba por que pienso podriamos ponerle otro color de hover para distinguirlo del checked*/
+  background: var(--primary);
+  color: #fff;
+}
+
+.tutopic-checkbox-item input {
+  display: none;
+}
+
+input.tutopic-normal-checkbox {
+  color: var(--primary);
+  border-radius: 2px;
+}
+
+input.tutopic-normal-checkbox {
+  color: var(--primary);
+}
+
+input.tutopic-normal-checkbox:checked::before {
+  color: var(--primary);
+}
+
+
+
+/* PAGINATOR */
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  /*border: 1px solid #ddd;*/
+}
+
+.pagination a.active {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.center {
+  text-align: center;
+}
